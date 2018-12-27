@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.env-preview {
+  font-size: 12px !important;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+img {
+  width: unset;
+  margin-left: unset;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  /* margin-top: 60px; */
+}
+
+#part_phone {
+  margin: 20px 20px 0px 20px;
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  padding: 80px 12px 46px 12px;
+  box-sizing: border-box;
+  /* width: 365px;
+    height: 700px; */
+}
+
+.part_phone_screen {
+  background-color: white;
+  height: 530px;
+  width: 316px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.part {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #c5ccd4;
+  box-shadow: 0 0 5px #c5c5c5;
+}
+
+.render-design .comp:not(.active):hover {
+  display: block;
+  border: 2px dashed goldenrod;
+  /* float: left;
+    z-index: 999; */
+}
+
+.part-header {
+  margin: 10px;
+  padding-left: 0px;
+  padding-top: 7px;
+  border-bottom: 1px solid #c5ccd4;
+}
+
+.part-header .title {
+  border-left: 2px solid #0099CC;
+  padding-left: 10px;
+  /* font-size: 14px; */
+}
+
+.part-header .el-button {
+  float: right;
+  margin-left: 10px;
+}
+
+.part-left {
+  min-width: 280px;
+}
+
+.part-center {
+  min-width: 400px;
+  overflow: unset;
+  border: 0;
+  box-shadow: 0 0 0px #c5c5c5;
+}
+
+.part-right {
+  min-width: 280px;
+}
+
+.comp {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.env-design .comp:hover {
+  border: 1px dashed #67C23A;
+}
+
+.comp:hover .design-tool-bar {
+  display: block;
+}
+
+.design-tool-bar {
+  position: absolute;
+  font-size: 24px;
+  color: rgb(153, 26, 26);
+  text-align: right;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  padding-left: 5px;
+  display: none;
+}
+
+.design-tool-bar i:hover {
+  color: tomato;
+  cursor: pointer;
+}
+
+.icon-comp {
+  font-size: 30px;
+}
+
+.active {
+  border: 1px dashed tomato !important;
+}
+
+.el-dialog__wrapper {
+  z-index: 99999 !important
+}
+
+.el-select-dropdown{
+  z-index: 100000 !important
+}
+
+
+/* 向sup8的样式靠拢 */
+
+/* .el-button {
+    font-size: 12px;
+    border-radius: 0px;
+    padding: 8px 16px;
+    line-height: 14px;
+} */
+
+/* .btn-primary {
+    color: #fff;
+    background-color: #0099CC;
+    border-color: #0099CC;
+} */
+
+[aria-expanded="true"] .el-collapse-item__header {
+  color: #4b96de;
+}
+
+.el-collapse-item__header {
+  border-bottom: 1px solid #ebeef5;
+}
+
+.part-left .el-tabs__header {
+  margin: 0%;
+}
+
+.el-collapse-item__header {
+  /* font-size: 13px; */
+  color: #333;
+  /* text-indent: 20px; */
+}
+
+.el-collapse-item__arrow {
+  float: left;
+}
+
+.el-collapse-item__arrow.el-icon-arrow-right:before {
+  content: "\E60E" !important;
+}
+
+.el-collapse-item.is-active .el-collapse-item__header {
+  border-bottom-color: #ebeef5
+}
+
+.page-title .el-input__inner {
+  border: 0px solid wheat;
+  cursor: pointer;
+}
+
+.page-title .el-input__inner:focus {
+  border: 1px solid #dcdfe6;
+}
+
+.option-bar {
+  text-align: center;
+  font-size: 16px;
+}
+
+.option-bar i:hover {
+  color: tomato
+}
+
+.part-footer {
+  background-color: red
+}
+
+/* 小屏幕样式 */
+
+@media screen and (max-width: 1366px) {
+  .part-header .el-button {
+    padding: 10px 20px;
+    margin-top: -8px;
+  }
+  .part-center {
+    margin-top: 0px;
+    min-width: 320px;
+    overflow: unset;
+    border: 0;
+    box-shadow: 0 0 0px #c5c5c5;
+  }
+  #part_phone {
+    margin: 0 20px 0 38px;
+    padding: 66px 4px 46px 4px;
+  }
+  .part_phone_screen {
+    height: 368px;
+    width: 234px;
+  }
+}
+
+/* 这里是覆盖原始的样式 */
+
+/* .mint-cell-wrapper{
+  font-size: 12px;
+} */
+
+.mint-navbar .mint-tab-item.is-selected {
+  margin-bottom: 0;
+}
+
+.mint-popup {
+  background-color: unset
+}
+
+.mint-header-title,
+.mint-tab-item-label,
+.mint-cell-wrapper,
+.mint-tab-container-item {
+  font-size: 1rem !important;
+  font-weight: normal;
+  color: #232326 !important
+}
+
+.mint-cell-text{
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.comp-rich p {
+  margin: 0;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+/* 属性的描述信息 */
+
+.prop-intro {
+  color: grey;
+}
+
+.main {
+  min-height: 87vh;
+}
+
+.copy-right {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 3vh 0 4vh 0;
+  color: #d9d9d9;
+  /* height: 4vh; */
+}
+
+.copy-right img {
+  position: relative;
+  top: 0.3rem;
+  width: 1.4rem;
+  opacity: 0.5;
+}
+
+/* 富文本框 */
+
+.w-e-text-container {
+  z-index: 10 !important;
+}
+
+.rich {
+  padding: 0 10px;
+  min-height: 50px;
+}
+
+.rich p {
+  margin: 0 !important;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.rich img {
+  max-width: 100%;
+}
+
+/* 富文本框 */
+
+
+
+.el-color-dropdown{
+  z-index: 20000 !important
+}

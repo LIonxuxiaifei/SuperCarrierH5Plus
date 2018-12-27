@@ -1,0 +1,971 @@
+.jz_page_manage_tab_wrap {
+  height: 100%
+}
+
+.jz_page_manage_tab_wrap .wrap_level2 {
+  height: 100%
+}
+
+.jz_page_manage_tab_wrap .jz_page_manage_content {
+  overflow: hidden;
+  height: 93%
+}
+
+.jz_page_manage_tab_wrap .first_level .main_tab {
+  height: 40px;
+  overflow: hidden
+}
+
+.jz_page_manage_tab_wrap .first_level .tab_item {
+  display: inline-block;
+  width: 144px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #578ec7;
+  color: #fff;
+  font-size: 15px
+}
+
+.jz_page_manage_tab_wrap .first_level .tab_item.active {
+  color: #578ec7;
+  background-color: #fff
+}
+
+.jz_page_manage_tab_wrap .first_level .tab_active_decorate {
+  display: none
+}
+
+.jz_page_manage_tab_wrap .second_level .main_tab {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #eee
+}
+
+.jz_page_manage_tab_wrap .second_level .tab_item {
+  display: inline-block;
+  height: 50px;
+  width: 70px;
+  margin-left: 17px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  color: #666;
+  font-size: 14px
+}
+
+.jz_page_manage_tab_wrap .second_level .tab_item.active {
+  color: #578ec7
+}
+
+.jz_page_manage_tab_wrap .second_level .tab_active_decorate {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  margin-left: 17px;
+  height: 2px;
+  background: #578ec7;
+  transition: left .2s
+}
+
+.jz_page_manage_tab_wrap .tab_item {
+  cursor: pointer
+}
+
+.jz_page_manage_tab_wrap .first_level>.main_tab .tab_item:hover {
+  background-color: #709fcf
+}
+
+.jz_page_manage_tab_wrap .first_level>.main_tab .tab_item.active:hover {
+  background-color: #fff;
+  cursor: default
+}
+
+.jz_page_manage_tab_wrap .second_level>.main_tab .tab_item:hover {
+  color: #000
+}
+
+.jz_page_manage_tab_wrap .second_level>.main_tab .tab_item.active {
+  color: #578ec7;
+  cursor: default
+}
+
+.jz_page_manage_tab_wrap .second_level .col-module-manage {
+  height: 85.7%
+}
+
+.jz_page_manage_tab_wrap .translate-fade-enter-active,
+.jz_page_manage_tab_wrap .translate-fade-leave-active {
+  transition: all .2s
+}
+
+.jz_page_manage_tab_wrap .translate-fade-enter,
+.jz_page_manage_tab_wrap .translate-fade-leave-active {
+  transition: all 0s;
+  opacity: 1
+}
+
+.jz_page_manage_tab_wrap .translate-fade-enter {
+  transform: translateX(-288px);
+  opacity: 0
+}
+
+.jz_page_manage_tab_wrap .translate-fade-leave-active {
+  transform: translateX(0)
+}
+
+.jz_page_manage_tab_wrap .animate_style>.translate-fade-enter {
+  transform: translateX(288px);
+  opacity: 0
+}
+
+.fk-pageManage {
+  max-height: 90%;
+  overflow: hidden
+}
+
+@media only screen and (min-height :0) and (max-height:600px) {
+  .fk-pageManage {
+    max-height: 84%
+  }
+}
+
+.colModuleStatcList {
+  padding-right: 16px;
+  padding-left: 16px
+}
+
+.colModuleStatcListWrap {
+  padding-top: 18px
+}
+
+.otherColModuleWrap {
+  padding-bottom: 130px
+}
+
+.fk-pageManage .f-staUl,
+.fk-curColModuleContainer .colModuleStaUl {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+.fk-pageManage .f-staUl {
+  padding: 0 16px
+}
+
+.fk-pageManage .f-staUl div:last-child {
+  margin-bottom: 0
+}
+
+.fk-pageManage .f-staLine {
+  cursor: default
+}
+
+.fk-pageManage .f-staLineLeft,
+.colModuleLineLeft {
+  display: inline-block;
+  width: 145px;
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top
+}
+
+.fk-pageManage .f-staLineRight,
+.colModuleLineRight {
+  float: right;
+  display: inline-block;
+  width: 85px;
+  vertical-align: top;
+  text-align: right
+}
+
+.colModuleStaUl .fk_moduleFolder {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  vertical-align: middle;
+  transition: transform .3s;
+  background: url(/image/v2/mbg01.png?v=201803191141) -386px -987px no-repeat;
+  margin-top: -3px
+}
+
+.fk_folderOpen {
+  transform: rotate(90deg)
+}
+
+.colModuleStaUl .fk_folderHide {
+  display: none
+}
+
+.topLi>.f-staLine,
+.topModuleLi>.colModuleStatcLine {
+  background: #fff;
+  font-size: 13px;
+  color: #333
+}
+
+.topLi>.f-staLine .f-staShowNameText,
+.topModuleLi>.colModuleStatcLine .colShowModuleNameText {
+  color: #333
+}
+
+.topModuleLi>.colModuleStatcLine .colModuleName {
+  color: #333
+}
+
+.colModuleStaUl .colModuleStaUl li {
+  background: #fbfbfb
+}
+
+.f-staLine,
+.colModuleStatcLine {
+  height: 42px;
+  line-height: 44px;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px
+}
+
+.colModuleStaUl .colModuleStaUl .colModuleStatcLine {
+  border: 0
+}
+
+.colModuleNameText {
+  display: inline-block;
+  min-width: 65px;
+  color: #ccc;
+  margin: 0 1px
+}
+
+.colModuleNameText:hover {
+  max-width: 143px;
+  height: 28px;
+  line-height: 30px;
+  margin: 0 1px;
+  outline: #c5c5c5 dashed 1px
+}
+
+.isFolderSpan:hover {
+  max-width: 128px
+}
+
+.colModuleStaUl .colModuleStaUl .colModuleNameText:hover {
+  max-width: 123px
+}
+
+.colShowModuleNameText {
+  color: #666
+}
+
+.colModuleName {
+  width: 100%;
+  height: 30px;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  padding: 0 5px;
+  font-size: 13px;
+  color: #666;
+  box-sizing: border-box
+}
+
+.colModuleName:focus {
+  outline: 0;
+  outline: #5874d8 solid 1px;
+  color: #666;
+  font-size: 13px
+}
+
+.fk-pageManage .f-editName {
+  text-indent: 5px
+}
+
+.isFolderInput {
+  width: 90%
+}
+
+.fk-pageManage .f-staViewSwitch,
+.colModuleViewSwitch {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 18px;
+  width: 15px;
+  height: 10px;
+  background: url(/image/v2/mbg01.png?v=201803191141) no-repeat;
+  background-position: -325px -989px;
+  cursor: pointer
+}
+
+.colModuleViewBlock {
+  background-position: -261px -989px
+}
+
+.colModuleViewBlock:hover {
+  background-position: -440px -989px
+}
+
+.colModuleDel {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 24px;
+  background: url(/image/v2/mbg01.png?v=201803191141) no-repeat;
+  background-position: -293px -987px;
+  cursor: pointer
+}
+
+.colModuleDelViewBlock {
+  background-position: -293px -987px
+}
+
+.colModuleDelViewBlock:hover {
+  background-position: -472px -987px
+}
+
+.moduleDisplayHide .colModuleNameText {
+  color: #ccc
+}
+
+.fk-pageManage .f-staViewSwitch,
+.moduleDisplayHide .colModuleViewSwitch {
+  background-position: -325px -989px
+}
+
+.fk-colSwitchWrap {
+  height: 32px;
+  line-height: 32px;
+  padding-right: 10px;
+  font-size: 13px;
+  color: #585858;
+  margin-bottom: 24px;
+  position: relative
+}
+
+.fk-colSwitchWrap .f-name {
+  margin-left: 30px;
+  margin-right: 14px;
+  vertical-align: middle;
+  color: #333;
+  font-size: 13px
+}
+
+.fk-colSwitchWrap .f-notUseModule {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 26px;
+  top: 8px;
+  background: url(/image/v2/mbg01.png?v=201803191141) no-repeat;
+  background-position: -227px -985px;
+  cursor: pointer
+}
+
+.fk-mobiModulePanel>.jz_page_manage_tab_wrap {
+  height: 100%;
+}
+
+.fk-manageModuleEntran {
+  height: 49px;
+  width: 100%;
+  line-height: 49px;
+  border-top: 1px solid #f2f2f2;
+  color: #333;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff
+}
+
+.fk-manageModuleEntran .f-entranBtn {
+  position: relative;
+  top: 0;
+  text-align: right
+}
+
+.fk-manageModuleEntran .f-entranBtn .f-entranBtnWrap {
+  width: 85px;
+  position: relative;
+  right: 20px;
+  display: inline-block;
+  cursor: pointer
+}
+
+.fk-manageModuleEntran .f-entranIcon {
+  width: 18px;
+  height: 18px;
+  background: url(/image/v2/mbg01.png?v=201803191141) no-repeat;
+  background-position: -227px -985px;
+  position: absolute;
+  top: 15px;
+  right: 62px
+}
+
+.fk-colSwitchWrap .mCustomScrollbar {
+  padding: 0
+}
+
+.fk-mobiModulePanel .mCSB_scrollTools .mCSB_draggerRail {
+  background: #f0f0f0
+}
+
+.addNewModulePanel .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #d2d2d2
+}
+
+.addNewModulePanel .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+  background: #c5c5c5
+}
+
+.mobiChoiceModulePanel.activeTab~.fk-manageModuleEntran {
+  display: block
+}
+
+.jz_page_manage_tab_wrap .pm_pageCompon {
+  height: 94.5%;
+  background-color: #fafafa
+}
+
+.jz_page_manage_tab_wrap .pm_pageCompon .jz_page_manage_content {
+  height: 91%
+}
+
+.jz_page_manage_tab_wrap .pm_pageCompon .main_tab {
+  background-color: #fff
+}
+
+.pm_pageCompon .second_level .main_tab {
+  border-bottom: 1px solid #e8e8e8
+}
+
+.system-page-manage {
+  background-color: #fafafa;
+  padding-top: 3%
+}
+
+.regular-page-manage {
+  background-color: #fafafa;
+  padding-top: 3%
+}
+
+.system-page-manage .f-staLine,
+.regular-page-manage .f-staLine {
+  border-color: #e0e0e0;
+  background-color: #fff
+}
+
+.pageManage {
+  height: 100%
+}
+
+.fk-pageManage .f-staLineLeft {
+  width: 118px
+}
+
+.fk-pageManage .f-staLineRight {
+  width: 106px
+}
+
+.fk-pageManage .f-pageTool {
+  display: inline-block;
+  height: 14px;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 12px;
+  background: url(/image/v2/mbg01.png?v=201803191141) no-repeat;
+  cursor: pointer
+}
+
+.fk-pageManage .f-pageDesign {
+  width: 15px;
+  background-position: -227px -1021px
+}
+
+.fk-pageManage .f-pageSetting {
+  width: 14px;
+  background-position: -196px -1022px
+}
+
+.fk-pageManage .f-pageDel {
+  width: 14px;
+  background-position: -228px -1085px
+}
+
+.fk-pageManage .f-staNameText {
+  height: 28px;
+  line-height: 30px;
+  display: inline-block;
+  min-width: 65px;
+  margin: 0 1px;
+  cursor: pointer
+}
+
+.fk-pageManage .f-staNameText:hover {
+  max-width: 116px;
+  outline: #c5c5c5 dashed 1px
+}
+
+.fk-systemPageManage .f-staLine {
+  cursor: default
+}
+
+.fk-systemPageManage .f-staLineLeft {
+  cursor: default
+}
+
+.fk-systemPageManage .f-staLineRight {
+  cursor: default
+}
+
+.fk-systemPageManage .f-staNameText:hover {
+  outline: 0;
+  cursor: default
+}
+
+.fk-pageManage .f-pageNameEdit {
+  width: 100%;
+  height: 30px;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  padding: 0 5px;
+  font-size: 13px;
+  color: #666;
+  box-sizing: border-box;
+  color: #333
+}
+
+.fk-pageManage .f-pageNameEdit:focus {
+  outline: 0;
+  outline: #5874d8 solid 1px;
+  color: #666;
+  font-size: 13px
+}
+
+.fk-pageManage .f-pageDesign:hover {
+  background-position: -227px -1053px
+}
+
+.fk-pageManage .f-pageSetting:hover {
+  background-position: -196px -1054px
+}
+
+.fk-pageManage .f-pageDel:hover {
+  background-position: -472px -987px
+}
+
+.fk-pageManage .banDelete {
+  background-position: -357px -987px;
+  cursor: no-drop
+}
+
+.fk-pageManage .banDelete:hover {
+  background-position: -357px -987px;
+  cursor: no-drop
+}
+
+.fk-regularPageManage,
+.fk-systemPageManage {
+  height: 100%;
+  overflow: hidden
+}
+
+.fk-regularPageManage .f-addPage {
+  background-color: #fff;
+  font-size: 13px;
+  color: #333;
+  height: 42px;
+  line-height: 44px;
+  border: 1px solid #e0e0e0;
+  margin: 14px 16px 0;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center
+}
+
+.fk-regularPageManage .f-addPage span {
+  font-size: 16px;
+  margin-right: 4px
+}
+
+.fk-regularPageManage .f-addPage:hover {
+  color: #5874d8;
+  border-color: #5874d8
+}
+
+#pageId3 .f-staNameText {
+  cursor: default
+}
+
+#pageId3 .f-staNameText:hover {
+  outline: 0;
+  cursor: default
+}
+
+.fk-mobiModulePanel .moduleManage {
+  height: 100%
+}
+
+.fk-mobiModulePanel .component-addmodule-enter .moduleAloneArea,
+.fk-mobiModulePanel .component-addmodule-leave-active .moduleAloneArea {
+  height: 0
+}
+
+.fk-mobiModulePanel .component-addmodule-enter .noAllowAddModuleTips,
+.fk-mobiModulePanel .component-addmodule-leave-active .noAllowAddModuleTips {
+  height: 0
+}
+
+.fk-mobiModulePanel .component-addmodule-enter-active .moduleAloneArea,
+.fk-mobiModulePanel .component-addmodule-leave-active .moduleAloneArea,
+.fk-mobiModulePanel .component-addmodule-enter-active .noAllowAddModuleTips,
+.fk-mobiModulePanel .component-addmodule-leave-active .noAllowAddModuleTips {
+  -webkit-transition: height .3s ease;
+  -ms-transition: height .3s ease;
+  -moz-transition: height .3s ease;
+  transition: height .3s ease
+}
+
+.panelContentScroll {
+  height: 100%;
+  border-bottom: 0 solid transparent;
+  box-sizing: border-box;
+  overflow: hidden
+}
+
+.panelInnerContent_addModule .mCS-fk-gray {
+  background: #fff;
+  min-height: 400px
+}
+
+.panelInnerContent_addModule .addModulePanelContent {
+  background: #fff
+}
+
+.moduleLegend {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+  background: #fff
+}
+
+.mLegendText {
+  font-size: 13px;
+  color: #333;
+  text-indent: 20px
+}
+
+.mLegendText:hover {
+  color: #4b96de
+}
+
+.mLegendText:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-right-color: #666;
+  border-bottom-color: #666;
+  margin: -3px 10px 0 15px;
+  vertical-align: middle;
+  transition: all .2s;
+  transform: rotate(-45deg)
+}
+
+.moduleLegend_on .mLegendText {
+  color: #4b96de
+}
+
+.moduleLegend_on .mLegendText:before {
+  border-right-color: #4b96de;
+  border-bottom-color: #4b96de;
+  transform: rotate(0)
+}
+
+.moduleViewList {
+  overflow: hidden;
+  transition: height .3s;
+  max-height: 800px;
+  background: #fff
+}
+
+.moduleViewList_on {
+  height: auto;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.moduleAloneArea {
+  float: left;
+  width: 83px;
+  height: 83px;
+  border-right: 1px dashed #e1e1e1;
+  border-bottom: 1px dashed #e1e1e1;
+  margin-bottom: -1px;
+  margin-right: -1px;
+  color: #333;
+  cursor: pointer
+}
+
+.moduleAloneIcon {
+  height: 30px;
+  width: 37px;
+  margin: 16px auto 5px auto;
+  /* background-image: url(/image/v2/mbg01.png?v=201803191141); */
+  background-image: url(../img/mbg01.png);
+  background-repeat: no-repeat;
+  cursor: pointer
+}
+
+.moduleArea_simpleText .moduleAloneIcon {
+  background-position: -191px -748px
+}
+
+.moduleArea_floatImg .moduleAloneIcon {
+  background-position: -240px -748px
+}
+
+.moduleArea_floatBtn .moduleAloneIcon {
+  background-position: -291px -748px
+}
+
+.moduleArea_cubeNavigation .moduleAloneIcon {
+  background-position: -338px -748px
+}
+
+.moduleArea_rich .moduleAloneIcon {
+  background-position: -399px -748px
+}
+
+.moduleArea_multiPhoto .moduleAloneIcon {
+  background-position: -192px -795px
+}
+
+.moduleArea_news .moduleAloneIcon {
+  background-position: -237px -795px
+}
+
+.moduleArea_notice .moduleAloneIcon {
+  background-position: -291px -795px
+}
+
+.moduleArea_multiPhotoCarousel .moduleAloneIcon {
+  background-position: -345px -795px
+}
+
+.moduleArea_horizonTab .moduleAloneIcon {
+  background-position: -191px -842px
+}
+
+.moduleArea_pack .moduleAloneIcon {
+  background-position: -398px -795px
+}
+
+.moduleArea_product .moduleAloneIcon {
+  background-position: -238px -841px
+}
+
+.moduleArea_productGroup .moduleAloneIcon {
+  background-position: -289px -841px
+}
+
+.moduleArea_productSearch .moduleAloneIcon {
+  background-position: -338px -841px
+}
+
+.moduleArea_coupon .moduleAloneIcon {
+  background-position: -725px -748px
+}
+
+.moduleArea_adsPictures .moduleAloneIcon {
+  background-position: -399px -841px
+}
+
+.moduleArea_form .moduleAloneIcon {
+  background-position: -188px -890px
+}
+
+.moduleArea_vote .moduleAloneIcon {
+  background-position: -237px -890px
+}
+
+.moduleArea_photoGroup .moduleAloneIcon {
+  background-position: -288px -890px
+}
+
+.moduleArea_newsGroup .moduleAloneIcon {
+  background-position: -337px -890px
+}
+
+.moduleArea_photoGroupNav .moduleAloneIcon {
+  background-position: -398px -889px
+}
+
+.moduleArea_search .moduleAloneIcon {
+  background-position: -189px -937px
+}
+
+.moduleArea_video .moduleAloneIcon {
+  background-position: -239px -937px
+}
+
+.moduleArea_fileDownload .moduleAloneIcon {
+  background-position: -289px -937px
+}
+
+.moduleArea_code .moduleAloneIcon {
+  background-position: -342px -935px
+}
+
+.moduleArea_photo .moduleAloneIcon {
+  background-position: -398px -936px
+}
+
+.moduleArea_simpleText:hover .moduleAloneIcon {
+  background-position: -471px -748px
+}
+
+.moduleArea_floatImg:hover .moduleAloneIcon {
+  background-position: -520px -748px
+}
+
+.moduleArea_floatBtn:hover .moduleAloneIcon {
+  background-position: -571px -748px
+}
+
+.moduleArea_cubeNavigation:hover .moduleAloneIcon {
+  background-position: -618px -748px
+}
+
+.moduleArea_rich:hover .moduleAloneIcon {
+  background-position: -679px -748px
+}
+
+.moduleArea_multiPhoto:hover .moduleAloneIcon {
+  background-position: -472px -795px
+}
+
+.moduleArea_news:hover .moduleAloneIcon {
+  background-position: -517px -795px
+}
+
+.moduleArea_notice:hover .moduleAloneIcon {
+  background-position: -571px -795px
+}
+
+.moduleArea_multiPhotoCarousel:hover .moduleAloneIcon {
+  background-position: -625px -795px
+}
+
+.moduleArea_horizonTab:hover .moduleAloneIcon {
+  background-position: -471px -842px
+}
+
+.moduleArea_pack:hover .moduleAloneIcon {
+  background-position: -678px -795px
+}
+
+.moduleArea_product:hover .moduleAloneIcon {
+  background-position: -518px -841px
+}
+
+.moduleArea_productGroup:hover .moduleAloneIcon {
+  background-position: -569px -841px
+}
+
+.moduleArea_productSearch:hover .moduleAloneIcon {
+  background-position: -618px -841px
+}
+
+.moduleArea_coupon:hover .moduleAloneIcon {
+  background-position: -725px -796px
+}
+
+.moduleArea_adsPictures:hover .moduleAloneIcon {
+  background-position: -679px -841px
+}
+
+.moduleArea_form:hover .moduleAloneIcon {
+  background-position: -468px -890px
+}
+
+.moduleArea_vote:hover .moduleAloneIcon {
+  background-position: -517px -890px
+}
+
+.moduleArea_photoGroup:hover .moduleAloneIcon {
+  background-position: -568px -890px
+}
+
+.moduleArea_newsGroup:hover .moduleAloneIcon {
+  background-position: -617px -890px
+}
+
+.moduleArea_photoGroupNav:hover .moduleAloneIcon {
+  background-position: -678px -889px
+}
+
+.moduleArea_search:hover .moduleAloneIcon {
+  background-position: -469px -937px
+}
+
+.moduleArea_video:hover .moduleAloneIcon {
+  background-position: -519px -937px
+}
+
+.moduleArea_fileDownload:hover .moduleAloneIcon {
+  background-position: -569px -937px
+}
+
+.moduleArea_code:hover .moduleAloneIcon {
+  background-position: -622px -935px
+}
+
+.moduleArea_photo:hover .moduleAloneIcon {
+  background-position: -678px -936px
+}
+
+.moduleAloneText {
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer
+}
+
+.moduleAloneArea:hover {
+  color: #5874d8
+}
+
+.noAllowAddModuleTips {
+  font-size: 13px;
+  color: #333;
+  height: 166px;
+  line-height: 166px;
+  text-align: center
+}
+
+.fk-placeHelper {
+  margin-top: 1px;
+  background-color: rgba(97, 140, 239, 0.4);
+  border: 1px solid #7b9ff7
+}
+
+.fk-placeHelper2 {
+  background-color: rgba(97, 140, 239, 0.4);
+  border: 1px solid #7b9ff7;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  margin-right: 0
+}
